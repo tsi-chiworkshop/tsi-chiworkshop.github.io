@@ -17,3 +17,23 @@
 .conference-date time{font-size:1rem;color:white}
 @media(max-width:700px){.hero{padding:26px 0 32px}.hero-meta{margin-bottom:24px;padding-bottom:16px}.hero-content h1{font-size:clamp(2.2rem,6.5vw,3rem)}.hero-content .subtitle{margin-bottom:24px}.hero-bottom{gap:24px}.conference-date{border-left:0;padding-left:0}.hero-bottom .hero-actions{flex:1 1 100%}}
 @media print{.conference-date time,.hero-content h1 .title-line:first-child{color:black}}
+
+/* Current proposal stage: Abstract and five organizer portraits.
+   All original section styles above remain available for restoration. */
+.intro .container{grid-template-columns:minmax(0,.9fr) minmax(0,1.35fr);column-gap:64px;align-items:stretch}
+.intro .section-heading{display:flex;flex-direction:column;margin-bottom:0}
+.intro .section-heading h2{display:flex;flex:1;flex-direction:column;justify-content:space-between;margin-bottom:0;line-height:1.16}
+.intro .section-heading h2 span{display:block}
+.intro-copy .abstract-copy{font-size:1rem;line-height:1.65;color:var(--ink);margin:0}
+.hero-bottom{justify-content:flex-end}
+.organizers{border-top:1px solid var(--line)}
+.organizers .section-heading{margin-bottom:36px}
+.organizer-portraits{grid-template-columns:repeat(5,minmax(0,1fr));gap:24px}
+.organizer-portraits article{border:0;padding:0;text-align:center;min-width:0}
+.avatar-placeholder{width:136px;height:136px;border-radius:50%;background:#edf3f8;display:grid;place-items:center;overflow:hidden;margin:0 auto 22px;border:1px solid #d8e3ed}
+.avatar-placeholder svg{width:100%;height:100%;fill:#becddd}
+.organizer-portraits h3{font-size:1.13rem;line-height:1.4;letter-spacing:-.02em;min-height:3.2em;margin:0 0 8px;display:flex;align-items:center;justify-content:center}
+.organizer-portraits article>.affiliation{font-size:.875rem;line-height:1.55;color:var(--muted);font-weight:400;margin:0}
+@media(max-width:960px){.intro .container{column-gap:36px}.organizer-portraits{gap:16px}.avatar-placeholder{width:112px;height:112px}.organizer-portraits h3{font-size:1rem}}
+@media(max-width:700px){.intro .container{grid-template-columns:1fr;row-gap:24px}.intro .section-heading h2{display:block}.intro .section-heading h2 span{display:inline}.intro-copy .abstract-copy{line-height:1.75}.organizer-portraits{grid-template-columns:repeat(2,minmax(0,1fr));gap:32px 20px}.organizer-portraits h3{min-height:0}.avatar-placeholder{width:128px;height:128px;margin-bottom:16px}.hero-bottom{justify-content:flex-start}}
+@media(max-width:360px){.avatar-placeholder{width:104px;height:104px}.organizer-portraits{gap:28px 14px}}
